@@ -1,6 +1,6 @@
 package NumberPattern;
 
-public class PyramidPattern123 {
+public class PyramidOuter123 {
    public static void main(String[] args) {
 	
 	   int num=3;
@@ -10,15 +10,14 @@ public class PyramidPattern123 {
 		   int n=i;
 		   for(int j=1;j<num*2;j++) {
 			   if(i+j>num&&j-i<num) {
-				   if(j<=num) {
-					   System.out.print(m++ + " ");
+				   if(j>=num) {
+					   System.out.print(m++ +" ");
 				   }
 				   else {
-					   System.out.print(--n + " ");
+					   System.out.print(n-- + " ");
 				   }
 			   }
-			   else
-			   {
+			   else {
 				   System.out.print("  ");
 			   }
 		   }
